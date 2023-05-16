@@ -103,7 +103,7 @@ export class MidjourneyMessage {
         return msg;
       }
       this.log(i, "wait no message found");
-      await sleep(1000 * 2);
+      await sleep(1000 * 5);
     }
   }
 
@@ -118,7 +118,7 @@ export class MidjourneyMessage {
         return msg;
       }
       this.log(i, content, "wait no message found");
-      await sleep(1000 * 2);
+      await sleep(1000 * 5);
     }
   }
   async WaitUpscaledMessage(
@@ -137,7 +137,7 @@ export class MidjourneyMessage {
         return msg;
       }
       this.log(i, content, "wait no message found");
-      await sleep(1000 * 2);
+      await sleep(1000 * 5);
     }
   }
 

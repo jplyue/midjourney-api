@@ -9,7 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prettier": "prettier --write .",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "docker:build": "docker build -t midjourney-api-mini . ",
+    "docker:run": "docker run -p 3000:3000 midjourney-api-mini"
   },
   "files": [
     "libs/*",
@@ -41,6 +43,9 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "midjourney": "^1.0.18",
     "p-queue": "^6.6.2",
     "throat": "^6.0.2",
     "tslib": "^2.5.0"
